@@ -1,28 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;600;700&display=swap');
-$primary:#83a3db;
-$secondary:#ffb7ba;
-$secondary-hard:#f37999;
-$main:white;
-*,body{
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;600;700&display=swap");
+$primary: #83a3db;
+$secondary: #ffb7ba;
+$secondary-hard: #f37999;
+$main: white;
+$phone: 767px;
+$tablet: 768px;
+$laptop: 1024px;
+$laptop-l: 1440px;
+$four-k: 2560px;
+*,
+body {
     width: auto;
     height: auto;
     margin: 0;
     padding: 0;
-    font-family: 'Asap Condensed', sans-serif;
+    font-family: "Asap Condensed", sans-serif;
 }
 @mixin title {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 23px;
     color: $main;
     text-align: center;
 }
 @mixin line {
     padding-top: 10px;
-    img{
+    img {
         display: block;
         margin: 0 auto;
         width: 50%;
         height: auto;
+    }
+    @media (min-width: $tablet) {
+        img {
+            width: 23%;
+        }
+    }
+    @media (min-width: $laptop) {
+        img {
+            width: 15%;
+        }
     }
 }
 @mixin button {
@@ -33,22 +49,26 @@ $main:white;
     font-weight: 400;
     font-size: 15px;
     border-radius: 1px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    &:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    &:hover {
         filter: brightness(120%);
-    }           
+    }
+    @media (min-width: $laptop) {
+        padding: 0.7rem 2rem;
+    }
 }
 @mixin p {
     color: $secondary-hard;
 }
-.upperpage{
+.upperpage {
     display: flex;
     flex-direction: column;
     background-color: $primary;
     position: relative;
     padding-bottom: 4rem;
-    .flower5{
-        img{
+    .flower5 {
+        img {
             display: block;
             position: absolute;
             bottom: 0;
@@ -57,14 +77,14 @@ $main:white;
             z-index: 0;
         }
     }
-    .title{
-       @include title;
-       padding: 2rem 0rem;
-       .line{
-           @include line;
+    .title {
+        @include title;
+        padding: 2rem 0rem;
+        .line {
+            @include line;
+        }
     }
-    }
-    .images{
+    .images {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -74,25 +94,24 @@ $main:white;
         text-align: center;
         color: $main;
         z-index: 1;
-   
-        img{
+
+        img {
             display: block;
             margin: 0 auto;
             max-width: 80%;
             height: auto;
         }
     }
-
 }
-.midpage{
+.midpage {
     background-color: $secondary;
     display: flex;
     flex-direction: column;
     height: 30vh;
     justify-content: center;
     position: relative;
-    .flower2{
-        img{
+    .flower2 {
+        img {
             display: block;
             position: absolute;
             top: 0;
@@ -100,8 +119,8 @@ $main:white;
             width: 25%;
         }
     }
-    .flower1{
-        img{
+    .flower1 {
+        img {
             display: block;
             position: absolute;
             top: -10px;
@@ -111,27 +130,26 @@ $main:white;
         }
     }
 
-    .title{
+    .title {
         @include title;
         padding-bottom: 2rem;
-        .line{
+        .line {
             @include line;
-     }
+        }
     }
-    .p{
+    .p {
         text-align: center;
         color: $main;
         font-size: 15px;
         margin: 0rem 1.5rem;
     }
-    
 }
-.thirdpartpage{
+.thirdpartpage {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-bottom: 1rem;
-    .left{
+    .left {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -141,8 +159,8 @@ $main:white;
         border-bottom-style: solid;
         border-width: 1px;
         position: relative;
-        .flower4{
-            img{
+        .flower4 {
+            img {
                 display: block;
                 position: absolute;
                 bottom: 0;
@@ -150,8 +168,8 @@ $main:white;
                 width: 30%;
             }
         }
-        .flower3{
-            img{
+        .flower3 {
+            img {
                 display: block;
                 position: absolute;
                 bottom: 90px;
@@ -159,20 +177,20 @@ $main:white;
                 width: 15%;
             }
         }
-        .title{
-        color: $secondary-hard;
-        font-size: 23px;
-        font-weight: 400;
+        .title {
+            color: $secondary-hard;
+            font-size: 23px;
+            font-weight: 700;
         }
-        .p{
+        .p {
             @include p;
         }
-        .commencer{
-           @include button;
-           background-color: $secondary-hard;
+        .commencer {
+            @include button;
+            background-color: $secondary-hard;
         }
     }
-    .right{
+    .right {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -183,8 +201,8 @@ $main:white;
         border-bottom-style: solid;
         border-width: 1px;
         position: relative;
-        .flower5{
-            img{
+        .flower5 {
+            img {
                 display: block;
                 position: absolute;
                 bottom: 0;
@@ -192,8 +210,8 @@ $main:white;
                 width: 30%;
             }
         }
-        .flower6{
-            img{
+        .flower6 {
+            img {
                 display: block;
                 position: absolute;
                 bottom: 90px;
@@ -202,28 +220,114 @@ $main:white;
             }
         }
 
-        .title{
+        .title {
             color: $secondary-hard;
-            font-size:23px;
-            font-weight: 400;
-            }
-            .p{
-                @include p;
-            }
-            .voirreponse{
-                @include button;
-                background-color: $primary;
-             }
+            font-size: 23px;
+            font-weight: 700;
+        }
+        .p {
+            @include p;
+        }
+        .voirreponse {
+            @include button;
+            background-color: $primary;
+            text-transform: uppercase;
+        }
     }
 }
-footer{
-    .line{
+footer {
+    .line {
         @include line;
+        display: none;
     }
-    .instagram{
+    .instagram {
         display: block;
-        margin: 0 auto;
-        width: 8%;
+        margin: 1rem auto;
+        width: 40px;
         height: auto;
+    }
+}
+@media (min-width: $tablet) {
+    .midpage {
+        .p {
+            font-size: 18px;
+            padding: 0 11rem;
+            line-height: 1.6rem;
+        }
+    }
+    .thirdpartpage {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .left {
+            border-bottom-color: white;
+            border-right-color: $secondary-hard;
+            border-width: 1px;
+            border-right-style: solid;
+        }
+        .right {
+            padding-top: 0;
+            border-bottom-color: white;
+        }
+    }
+    footer {
+        .line {
+            display: block;
+        }
+    }
+}
+@media (min-width: $laptop) {
+    .upperpage {
+        height: 55vh;
+        .aliquip {
+            margin-left: 1.5rem;
+        }
+        .flower5 {
+            img {
+                margin-right: 1rem;
+                width: 15%;
+            }
+        }
+        .images {
+            margin: 0 15%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    .midpage {
+        height: 41vh;
+        .flower2 {
+            img {
+                top: 0;
+                left: 0;
+                width: 22%;
+            }
+        }
+        .flower1 {
+            img {
+                top: -17px;
+                left: 0;
+                width: 10%;
+            }
+        }
+
+        .p {
+            font-size: 20px;
+            padding: 0 13rem;
+            line-height: 1.6rem;
+        }
+    }
+    .thirdpartpage {
+        height: 35vh;
+    }
+}
+@media (min-width: $laptop-l) {
+    .midpage {
+        .p {
+            padding: 0 24rem;
+        }
     }
 }
