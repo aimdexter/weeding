@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/aimdexter/weeding)
-- Live Site URL: [Demo](https://aimdexter.github.io/weeding/)
+- Live Site URL: [Demo](https://aimdexter.github.io/weeding/page.html)
 
 ## My process
 
