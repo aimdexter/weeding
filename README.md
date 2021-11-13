@@ -1,23 +1,21 @@
-# Frontend Mentor - 3-column preview card component solution
+# Wedding -
 
-This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [The task](#the-task)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
-### The challenge
+### The task
 
 Users should be able to:
 
@@ -26,28 +24,29 @@ Users should be able to:
 
 ### Screenshots
 - Mobile :
-![](./images/screenshot-mobile.jpg)
+![](./images/mobile1.jpg)
+![](./images/mobile2.jpg)
+![](./images/mobile3.jpg)
+![](./images/mobile4.jpg)
 
 - Desktop:
 ![](./images/screenshot-desktop.jpg)
 
 ### Links
 
-- Solution URL: [Github](https://github.com/aimdexter/3-column-preview-card-component-main)
-- Live Site URL: [Demo](https://aimdexter.github.io/3-column-preview-card-component-main/)
+- Solution URL: [Github](https://github.com/aimdexter/weeding)
+- Live Site URL: [Demo](https://aimdexter.github.io/weeding/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- Sass
+- Semantic HTML5 (page.html)
+- SASS source (style.scss)
+- The compiled version of the SASS (style.css)
+- Flex-box
 - Mobile-first workflow
-
-### Useful resources
-
-- [Sass cheatsheet](https://devhints.io/sass)
-- [Grid cheatsheet](https://grid.malven.co/)
+- The assets (for example in a folder "assets/" or "images/")
 
 ## Author
 
@@ -56,5 +55,4 @@ Users should be able to:
 
 ## Acknowledgments
 
-Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-Coded by <a href="https://github.com/aimdexter/">Aimdexter</a>.
+Coded by <a href="https://github.com/aimdexter/">Debflyprod</a>.
