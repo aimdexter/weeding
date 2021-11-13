@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 $primary:#83a3db;
-$secondary:#fab3a6;
-$secondary-hard:#fca191;
+$secondary:#ffb7ba;
+$secondary-hard:#f37999;
 $main:white;
 *,body{
     width: auto;
@@ -114,11 +114,25 @@ $main:white;
     }
     
 }
+
 .thirdpartpage{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 2rem 0rem;
+    margin-bottom: 1rem;
+    @mixin button {
+        box-sizing: border-box;
+        padding: 0.5rem 2rem;
+        color: $main;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 15px;
+        border-radius: 1px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        &:hover{
+            filter: brightness(120%);
+        }           
+    }
     @mixin p {
         color: $secondary-hard;
     }
@@ -126,39 +140,97 @@ $main:white;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-bottom: 1rem;
-        gap: 1rem;
+        padding-bottom: 4rem;
+        gap: 1.5rem;
         border-color: $secondary-hard;
         border-bottom-style: solid;
         border-width: 1px;
+        position: relative;
+        .flower4{
+            img{
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 30%;
+            }
+        }
+        .flower3{
+            img{
+                display: block;
+                position: absolute;
+                bottom: 90px;
+                left: 10px;
+                width: 15%;
+            }
+        }
+    
         .title{
         color: $secondary-hard;
-        font-size:23px;
-        font-weight: 700;
+        font-size: 23px;
+        font-weight: 400;
         }
         .p{
             @include p;
         }
-        .button{
-            width: 50%;
-            align-self: center;
-            border-radius: 1px;
-            background-color: $secondary-hard;
+        .commencer{
+           @include button;
+           background-color: $secondary-hard;
         }
     }
     .right{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 1rem;
-        padding-top: 1rem;
+        gap: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        border-color: $secondary-hard;
+        border-bottom-style: solid;
+        border-width: 1px;
+        position: relative;
+        .flower5{
+            img{
+                display: block;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 30%;
+            }
+        }
+        .flower6{
+            img{
+                display: block;
+                position: absolute;
+                bottom: 90px;
+                right: 7px;
+                width: 15%;
+            }
+        }
+
         .title{
             color: $secondary-hard;
             font-size:23px;
-            font-weight: 700;
+            font-weight: 400;
             }
             .p{
                 @include p;
             }
+            .voirreponse{
+                @include button;
+                background-color: $primary;
+             }
+     
+    }
+}
+footer{
+    .line{
+        @include line;
+    }
+    .instagram{
+        display: block;
+        margin: 0 auto;
+        width: 8%;
+        height: auto;
     }
 }
