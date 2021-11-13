@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;600;700&display=swap');
 $primary:#83a3db;
 $secondary:#ffb7ba;
 $secondary-hard:#f37999;
@@ -8,7 +8,7 @@ $main:white;
     height: auto;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Asap Condensed', sans-serif;
 }
 @mixin title {
     font-weight: 400;
@@ -24,9 +24,23 @@ $main:white;
         width: 50%;
         height: auto;
     }
-
 }
-
+@mixin button {
+    box-sizing: border-box;
+    padding: 0.5rem 2rem;
+    color: $main;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 1px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    &:hover{
+        filter: brightness(120%);
+    }           
+}
+@mixin p {
+    color: $secondary-hard;
+}
 .upperpage{
     display: flex;
     flex-direction: column;
@@ -43,7 +57,6 @@ $main:white;
             z-index: 0;
         }
     }
-
     .title{
        @include title;
        padding: 2rem 0rem;
@@ -71,7 +84,6 @@ $main:white;
     }
 
 }
-
 .midpage{
     background-color: $secondary;
     display: flex;
@@ -114,28 +126,11 @@ $main:white;
     }
     
 }
-
 .thirdpartpage{
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-bottom: 1rem;
-    @mixin button {
-        box-sizing: border-box;
-        padding: 0.5rem 2rem;
-        color: $main;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 15px;
-        border-radius: 1px;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-        &:hover{
-            filter: brightness(120%);
-        }           
-    }
-    @mixin p {
-        color: $secondary-hard;
-    }
     .left{
         display: flex;
         flex-direction: column;
@@ -164,7 +159,6 @@ $main:white;
                 width: 15%;
             }
         }
-    
         .title{
         color: $secondary-hard;
         font-size: 23px;
@@ -220,7 +214,6 @@ $main:white;
                 @include button;
                 background-color: $primary;
              }
-     
     }
 }
 footer{
