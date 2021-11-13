@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+$primary:#8b96f7;
+$secondary:#fec5bb;
+$main:white;
+*,body{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+@mixin title {
+    font-weight: 400;
+    font-size: 20px;
+    color: $main;
+    text-align: center;
+}
+.upperpage{
+    display: flex;
+    flex-direction: column;
+    background-color: $primary;
+    .title{
+       @include title;
+       padding: 2rem 0rem;
+    }
+    .images{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        img{
+            width: 50%;
+            height: auto;
+        }
+    }
+
+}
+
+.midpage{
+    .title{
+        @include title;
+    }
+    background-color: $secondary;
+}
+.thirdpartpage{
+    .left{
+        .title{
+
+        }
+    }
+    .right{
+
+    }
+}
