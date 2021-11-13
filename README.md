@@ -31,7 +31,9 @@ Users should be able to:
 ![](./screen/mobile4.png)
 
 - Desktop:
-![](./screen/screenshot-desktop.png)
+
+![](./screen/Desktop1.png)
+![](./screen/Desktop2.png)
 
 ### Links
 
