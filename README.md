@@ -24,13 +24,13 @@ Users should be able to:
 
 ### Screenshots
 - Mobile :
-![](./screen/mobile1.jpg)
-![](./screen/mobile2.jpg)
-![](./screen/mobile3.jpg)
-![](./screen/mobile4.jpg)
+![](./screen/mobile1.png)
+![](./screen/mobile2.png)
+![](./screen/mobile3.png)
+![](./screen/mobile4.png)
 
 - Desktop:
-![](./screen/screenshot-desktop.jpg)
+![](./screen/screenshot-desktop.png)
 
 ### Links
 
