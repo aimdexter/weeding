@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
-$primary:#8b96f7;
-$secondary:#fec5bb;
+$primary:#83a3db;
+$secondary:#fab3a6;
+$secondary-hard:#fca191;
 $main:white;
 *,body{
     width: auto;
@@ -11,25 +12,60 @@ $main:white;
 }
 @mixin title {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 23px;
     color: $main;
     text-align: center;
 }
+@mixin line {
+    padding-top: 10px;
+    img{
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        height: auto;
+    }
+
+}
+
 .upperpage{
     display: flex;
     flex-direction: column;
     background-color: $primary;
+    position: relative;
+    padding-bottom: 4rem;
+    .flower5{
+        img{
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 25%;
+            z-index: 0;
+        }
+    }
+
     .title{
        @include title;
        padding: 2rem 0rem;
+       .line{
+           @include line;
+    }
     }
     .images{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content:center;
+        justify-content: center;
+        gap: 1rem;
+        position: relative;
+        text-align: center;
+        color: $main;
+        z-index: 1;
+   
         img{
-            width: 50%;
+            display: block;
+            margin: 0 auto;
+            max-width: 80%;
             height: auto;
         }
     }
@@ -37,18 +73,92 @@ $main:white;
 }
 
 .midpage{
+    background-color: $secondary;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: center;
+    position: relative;
+    .flower2{
+        img{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 25%;
+        }
+    }
+    .flower1{
+        img{
+            display: block;
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 15%;
+            z-index: 1;
+        }
+    }
+
     .title{
         @include title;
+        padding-bottom: 2rem;
+        .line{
+            @include line;
+     }
     }
-    background-color: $secondary;
+    .p{
+        text-align: center;
+        color: $main;
+        font-size: 15px;
+        margin: 0rem 1.5rem;
+    }
+    
 }
 .thirdpartpage{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0rem;
+    @mixin p {
+        color: $secondary-hard;
+    }
     .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 1rem;
+        gap: 1rem;
+        border-color: $secondary-hard;
+        border-bottom-style: solid;
+        border-width: 1px;
         .title{
-
+        color: $secondary-hard;
+        font-size:23px;
+        font-weight: 700;
+        }
+        .p{
+            @include p;
+        }
+        .button{
+            width: 50%;
+            align-self: center;
+            border-radius: 1px;
+            background-color: $secondary-hard;
         }
     }
     .right{
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding-top: 1rem;
+        .title{
+            color: $secondary-hard;
+            font-size:23px;
+            font-weight: 700;
+            }
+            .p{
+                @include p;
+            }
     }
 }

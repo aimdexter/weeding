@@ -10,32 +10,140 @@
 .upperpage {
   display: flex;
   flex-direction: column;
-  background-color: #8b96f7;
+  background-color: #83a3db;
+  position: relative;
+  padding-bottom: 4rem;
+}
+.upperpage .flower5 img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25%;
+  z-index: 0;
 }
 .upperpage .title {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 23px;
   color: white;
   text-align: center;
   padding: 2rem 0rem;
+}
+.upperpage .title .line {
+  padding-top: 10px;
+}
+.upperpage .title .line img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
 }
 .upperpage .images {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1rem;
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1;
 }
 .upperpage .images img {
-  width: 50%;
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
   height: auto;
 }
 
 .midpage {
-  background-color: #fec5bb;
+  background-color: #fab3a6;
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  justify-content: center;
+  position: relative;
+}
+.midpage .flower2 img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+}
+.midpage .flower1 img {
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 15%;
+  z-index: 1;
 }
 .midpage .title {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 23px;
   color: white;
   text-align: center;
+  padding-bottom: 2rem;
+}
+.midpage .title .line {
+  padding-top: 10px;
+}
+.midpage .title .line img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+.midpage .p {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  margin: 0rem 1.5rem;
+}
+
+.thirdpartpage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem 0rem;
+}
+.thirdpartpage .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1rem;
+  gap: 1rem;
+  border-color: #fca191;
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+.thirdpartpage .left .title {
+  color: #fca191;
+  font-size: 23px;
+  font-weight: 700;
+}
+.thirdpartpage .left .p {
+  color: #fca191;
+}
+.thirdpartpage .left .button {
+  width: 50%;
+  align-self: center;
+  border-radius: 1px;
+  background-color: #fca191;
+}
+.thirdpartpage .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+.thirdpartpage .right .title {
+  color: #fca191;
+  font-size: 23px;
+  font-weight: 700;
+}
+.thirdpartpage .right .p {
+  color: #fca191;
 }/*# sourceMappingURL=style.css.map */
